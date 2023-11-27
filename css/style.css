@@ -42,6 +42,7 @@
   
   h2 {
     font-size: 4rem;
+    display: block;
   }
   
   h3 {
@@ -63,6 +64,7 @@
   
     h2 {
       font-size: 4rem;
+      display: block;
     }
   
     h3 {
@@ -731,12 +733,188 @@
 }
 
 /*about section css starts*/
-.about {
+
+.about__heading {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.p__about {
+  text-align: center;
+  color: #000;
+}
+
+.p-p {
+  color: #000;
+  display: flex;
+  justify-content:center;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+  .p-p {
+    display:inline-flex;
+    margin-left: -30rem;
+    margin-bottom: 20rem;
+    padding-right: 10rem;
+  }
+}
+
+.img__about-div {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+@media  screen and (max-width: 600px) {
+  .img__about-div {
+    display: block;
+    justify-content: center;
+  }
+}
+
+.img__about {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin-left: 15rem;
+}
+
+@media screen and (min-width: 601px) {
+  .img__about {
+     width: 40%;
+     margin-left: 7rem;
+     margin-top: 6rem;
+  }
+} 
+
+.conatiner-pop {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: 200px 200px;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+@media screen and (max-width:1000px) {
+  .conatiner-pop {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(4, 180px);
+    column-gap: 10px;
+    row-gap: 25px;
+  }
+}
+
+.pop-packages {
+  width: 250px;
+  height: 180px;
+  background-color: green;
+}
+
+.pop-packages> img {
+  width: 25rem;
+  height: 16rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .pop-packages> img {
+    width: 25rem;
+  }
+}
+
+.h4-packages {
+  color: #fff;
+  text-align: center;
+}
+
+.the__world {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30vh;
+  background-color: #7b858b;
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 6rem;
 }
 
-.about__heading {
-  text-align: center;
+.t-testemonial {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: green;
+  padding: 6rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .t-testemonial {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.t-p {
+  margin-left: -27rem;
+  padding-right: 6rem;
+}
+
+@media screen and (max-width:1200px) {
+  .t-p {
+    margin-top: 12rem;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.img-test {
+  margin-left: 20rem;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .img-test {
+    margin-left: 12rem;
+  }
+}
+
+.conatiner-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 200px 200px;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+@media screen and (max-width:1000px) {
+  .conatiner-gallery {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 180px);
+    column-gap: 10px;
+    row-gap: 25px;
+  }
+}
+
+.img-gallery {
+  width: 250px;
+  height: 180px;
+  background-color: green;
+}
+
+.img-gallery> img {
+  width: 25rem;
+  height: 18rem;
+  border: 1px solid #333;
+}
+
+@media screen and (max-width: 1000px) {
+  .img-gallery> img {
+    width: 25rem;
+  }
 }
